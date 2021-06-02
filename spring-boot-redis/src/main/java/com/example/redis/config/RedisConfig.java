@@ -29,6 +29,7 @@ public class RedisConfig extends CachingConfigurerSupport {
                 for (Object obj : params) {
                     sb.append(obj.toString());
                 }
+                System.out.println("调用缓存:" + sb);
                 return sb.toString();
             }
         };
